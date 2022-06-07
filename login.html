@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>login page</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Joseph Mathe, Gabriel, Japheth Gitau">
+		<meta name="description" content="the go to site to attain answers to mathematics question and debate answers of need be.">
+		<meta name="keywords" content="mathematics, answers, question, formular">
+		<!-- allow the website to be viewed on proper scaling on mobile and on a computer -->
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<!-- link the css to this html page -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style type="text/css">
+			body{
+				font-weight: 300;
+				background-color: #3c5077
+			}
+			.login{
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 999;
+				padding: 20px;
+			}
+			.container{
+				width: 300px;
+				background-color: #fff;
+				border-radius: 20px;
+				padding: 20px;
+			}
+			.container:hover{
+				box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+				transition: 0.5s;
+				background-color: #fff;
+				transition-timing-function: ease-out;
+				transition-delay: 0.4s;
+			}
+			.container img{
+				border-radius: 50%;
+				margin-top: -50%;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			}
+			.container h2{
+				font-size: 30px;
+				text-align: center;
+				padding-right: 60%; 
+				padding-bottom: 10px;
+				text-decoration: underline;
+				color: #3c5077;
+			}
+			.container label{
+				font-size: 18px;
+				font-weight: 600;
+			}
+			.container .textbox1, .textbox2, .textbox3{
+				margin-top: 15px;
+				width: 90%;
+				height: 45px;
+				background-color: #00CED1; /*DarkTurquoise*/
+				border: none;
+				border-radius: 15px;
+				font-size: 20px;
+				padding-left: 10px;
+				display: grid;
+			}
+			.container input:hover{
+				box-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.6);
+				transition: 0.3s;
+			}
+
+			.container button{
+				background-color: #FF4500; /* orangered*/
+				border: none;
+				width: 80px;
+				height: 30px;
+				margin-top: 10px;
+				border-radius: 15px;
+				cursor: pointer;
+				outline: none;
+			}
+			.container button:hover{
+				box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+				transition: 0.3s;
+			}
+			.container .pen{
+				display: flex;
+			}
+
+		</style>
+	</head>
+
+	<!-- login page -->
+	<body>
+		<div class="login">
+			<div class="container">
+				<img src="images/smiley.png" width="70px" height="70px" alt="no img" >
+
+				<h2>login</h2>
+
+				<label>Username:</label>
+				<input type="text" placeholder="username" class="textbox1"><br>
+
+				<label>Password:</label>
+				<input type="password" placeholder="password" class="textbox2" id="pass"><br>
+
+				<label>Confirm:</label>
+				<input type="password" placeholder="password" class="textbox3" id="bass"><br>
+
+				<input type="checkbox" onclick="showPassword() "><b> show password<b><br>
+
+				<button type="submit">Login</button>
+				<button>Cancel</button><br>
+			</div>
+
+
+		</div>
+		<script type="text/javascript">
+			
+
+			function showPassword() {
+				var firstPassword = document.getElementById("pass");
+				var secondPassword = document.getElementById("bass");
+				if (firstPassword.type === "password" && secondPassword.type === "password")  {
+				    firstPassword.type = "text";
+				    secondPassword.type = "text";
+				} 
+				else {
+				    firstPassword.type = "password";
+				    secondPassword.type = "password";
+				}
+			}
+		</script>
+</html>
