@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>login page</title>
+		<title>signup page</title>
 		<meta charset="utf-8">
 		<meta name="author" content="Joseph Mathe, Gabriel, Japheth Gitau">
 		<meta name="description" content="the go to site to attain answers to mathematics question and debate answers of need be.">
 		<meta name="keywords" content="mathematics, answers, question, formular">
-
 		<!-- allow the website to be viewed on proper scaling on mobile and on a computer -->
 		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
 		<!-- link the css to this html page -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
-	<!-- login page -->
+	<!-- signup page -->
 	<body>
 		<div class="signup">
 			<!-- items within the signup box -->
 			<div class="container">
 				<a href="#"><img src="images/smiley.png" width="70px" height="70px" alt="no img"></a>
 
-				<h2>Login</h2>
+				<h2>Sign Up</h2>
 
-				<label>Username/Email:</label>
+				<label>Username:</label>
 				<input type="text" required placeholder="username" class="textbox1"><br>
+
+				<label>Email:</label>
+				<input type="text" required placeholder="email" class="textbox2"><br>
 
 				<label>Password:</label>
 				<input type="password" required placeholder="password" class="textbox3" id="pass"><br>
@@ -39,7 +40,7 @@
 			</div>
 		</div>
 
-		<!-- java script code -->
+		<!-- java script -->
 		<script type="text/javascript">
 			function showPassword() {
 				var firstPassword = document.getElementById("pass");
