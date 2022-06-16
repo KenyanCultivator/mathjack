@@ -1,0 +1,111 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #3c5077; 
+	font-weight: 300;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+button{
+	cursor: pointer;
+}
+	/* login/sign up page */
+.signup{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	background-image: url("images/space-space-art-digital-art-blue-planet.png");
+	
+	color: #3c5077;
+}
+
+/* items within the the signup box */
+.container{
+	width: 300px;
+	background-color: black;
+	border-radius: 20px;
+	padding: 20px;
+	transition-delay: 0.4s;
+	transition: 0.5s;
+}
+.container:hover{
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 1);
+	transition-timing-function: ease-out;
+}
+.container img{
+	border-radius: 50%;
+	margin-top: -50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.container h2{
+	font-size: 30px;
+	text-align: center;
+	padding-right: 60%; 
+	padding-bottom: 3%;
+	text-decoration: underline;
+	color: rgba(10,10,300,0.9);
+}
+.container label{
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(10,10,300,0.9);
+}
+.container .textbox1, .textbox2, .textbox3, .textbox4{
+	margin-top: 15px;
+	width: 90%;
+	height: 45px;
+	background-color: rgba(10,10,300,0.9);
+	color: #fff;
+	border: none;
+	border-radius: 15px;
+	font-size: 20px;
+	padding-left: 10px;
+	display: grid;
+	transition-duration: 1s;
+	transition-delay: .5s;
+}
+.container .textbox1:hover,.textbox2:hover,.textbox3:hover,.textbox4:hover{
+	box-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.6);
+	background-color: rgba(10,10,100,0.9);
+	width: 92%;
+	outline-color: #fff;
+	outline-style: solid;
+	outline-width: 1px;
+}
+.container button{
+	background-color: rgba(10,10,300,0.9);
+	border: none;
+	width: 70px;
+	height: 30px;
+	margin-top: 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	outline: none;
+	margin-left: 10%;
+	font-weight: 450;
+	font-size: 20px;
+	color: #fff;
+	transition-duration: .7s;
+	transition-delay: .5s;
+}
+.container button:hover{
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+	transition: 0.3s;
+	width: 90px;
+	outline-color: #fff;
+	outline-style: solid;
+	outline-width: 2px;
+	background-color: rgba(10,10,100,0.9);
+}
+
+
+
+
+
+	/*second section of body*/
